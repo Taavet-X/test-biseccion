@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>        
+        <title>Bisecci&oacuten</title>
+        <script src="./biseccion.js"></script>
+        <script src="./libs/math/math.js"></script>
+        <script src="./libs/math/function-plot.js"></script>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body onload="inicializar()">
+        <div class="main-container">
+            <div class="shared-container">
+                <div class="inputs">            
+                    <div class="input_row">
+                        <p class="label">f(x)</p>
+                        <input class="input" id="f" value="x^3+4x^2-10"/>
+                    </div>
+        
+                    <div class="input_row">
+                        <p class="label">a</p>
+                        <input class="input" id="a" value="1"/>
+                    </div>
+        
+                    <div class="input_row">
+                        <p class="label">b</p>
+                        <input class="input" id="b" value="2"/>
+                    </div>
+        
+                    <div class="input_row">
+                        <p class="label">T</p>
+                        <input class="input" id="T" value="0.0001"/>
+                    </div>
+        
+                    <div class="input_row">
+                        <p class="label">N</p>
+                        <input class="input" id="N" value="20"/>
+                    </div>
+    
+                    <button onclick="ejecutar()">Ejecutar</button>
+
+                    <div id="result" class="result">
+
+                    </div>
+                </div>
+                <div class="plot-div">
+                    <div id="plot"></div>
+                </div>            
+            </div>
+                
+            <div class="table-container">
+                <table id="table">
+                    <tr><th>n</th><th>a</th><th>b</th><th>p</th><th>f(p)</th></tr>
+                </table>
+    
+            </div>
+        </div>
+       
+    </body>
+</html>
